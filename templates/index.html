@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenie - Your AI Learning Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Welcome to EduGenie 🧠✨</h1>
+            <p class="tagline">Your personal AI tutor for learning support!</p>
+        </header>
+
+        <form id="taskForm" class="card" autocomplete="off">
+            <label for="task">What would you like to do?</label>
+            <select id="task" name="task">
+                <option value="qna">Ask a Question (Q&amp;A)</option>
+                <option value="explain">Explain a Concept</option>
+                <option value="quiz">Generate Quiz</option>
+                <option value="summary">Summarize Text</option>
+                <option value="path">Recommend Learning Path</option>
+            </select>
+
+            <label for="userInput" id="inputLabel">Ask EduGenie a question:</label>
+            <textarea id="userInput" name="userInput" rows="5" required
+                      placeholder="Which is the largest ocean?"></textarea>
+            <p id="hint" class="hint"></p>
+
+            <button type="submit" id="submitBtn">Get Answer</button>
+        </form>
+
+        <section id="resultCard" class="card result hidden" aria-live="polite">
+            <h2 id="resultTitle">Result</h2>
+            <div id="resultBody" class="result-body"></div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
