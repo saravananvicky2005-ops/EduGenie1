@@ -1,3 +1,6 @@
+https://github.com/user-attachments/assets/73874c6b-826f-4b6b-8b83-72418cb2b8a1
+
+
 # EduGenie: Google Gemini Powered Learning Assistant
 
 A lightweight AI learning assistant built with **FastAPI** and a plain **HTML + CSS + JS** frontend.
@@ -5,7 +8,10 @@ A lightweight AI learning assistant built with **FastAPI** and a plain **HTML + 
 | Feature | Endpoint | Model |
 |---|---|---|
 | Ask a question | `GET /qa?question=...` | Gemini |
-| Explain a concept | `POST /explain/` `{"topic": "..."}` | LaMini-Flan-T5-783M (local), Gemini fallback |
+| Explain a concept | `POST /explain/` `{"topic": "..."}` | LaMini-Flan-T5-78
+
+
+3M (local), Gemini fallback |
 | Generate a 3-question quiz | `POST /quiz` `{"text": "..."}` | Gemini |
 | Summarize text | `POST /summarize/` `{"text": "..."}` | Gemini |
 | Learning path | `GET /learn/recommendations?topic=...` | Gemini |
